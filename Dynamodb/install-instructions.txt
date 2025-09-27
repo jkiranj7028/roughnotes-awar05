@@ -1,0 +1,13 @@
+#Installation steps
+sudo dnf -y install nodejs npm
+mkdir ddb-web && cd ddb-web
+npm init -y
+npm i express @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
+export AWS_DEFAULT_REGION=ap-south-1
+
+node server.js
+
+---
+
+DynamoDb Table name: TestWrites
+Key: id (string)
